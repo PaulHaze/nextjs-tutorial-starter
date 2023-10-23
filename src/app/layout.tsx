@@ -4,8 +4,8 @@ import type { Metadata } from 'next';
 
 // !CHANGETHIS
 export const metadata: Metadata = {
-  title: 'CHANGE THIS',
-  description: 'CHANGE THIS',
+  title: 'NextJs Tutorial Template',
+  description: 'A starter project for working through multi-chapter tutorials',
 };
 
 export default function RootLayout({
