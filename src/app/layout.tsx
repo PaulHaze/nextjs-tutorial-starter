@@ -2,7 +2,6 @@ import '@/styles/main.scss';
 
 import type { Metadata } from 'next';
 
-// !CHANGETHIS
 export const metadata: Metadata = {
   title: 'NextJs Tutorial Template',
   description: 'A starter project for working through multi-chapter tutorials',
