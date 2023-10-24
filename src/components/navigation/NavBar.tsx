@@ -4,6 +4,7 @@ import { NavLink } from './NavLink';
 import { routes } from './routes';
 
 import styles from './Nav.module.scss';
+import { DarkModeToggle } from './DarkModeToggle';
 
 type NavBarProps = {
   showNav: boolean;
@@ -41,9 +42,8 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
           {renderRoutes}
         </ul>
       </div>
-
       {/* DARK MODE TOGGLE */}
-      <div>X</div>
+      <DarkModeToggle showNav={showNav} />
     </nav>
   );
 }

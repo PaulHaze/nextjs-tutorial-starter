@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
   body {
     @apply bg-sky-100/80 text-slate-900;
   }
   .dark body {
-    @apply text-offwhite bg-slate-800;
+    @apply bg-slate-800 text-offwhite;
   }
   h1 {
     @apply text-4xl font-normal leading-normal;
