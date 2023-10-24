@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { ThemeProvider } from 'next-themes';
 
 import { NavBar } from '../navigation/NavBar';
 
@@ -13,15 +14,17 @@ export function MainTemplate({ children }: MainLayoutProps) {
   const handleNavClick = () => setShowNav((prev) => !prev);
 
   return (
-    <div className="flex flex-grow">
-      <div
-        className={`transition-all duration-700 ease-in-out ${
-          showNav ? 'w-[150px] min-w-[150px]' : 'w-[40px] min-w-[40px]'
-        }`}
-      >
-        <NavBar showNav={showNav} handleNavClick={handleNavClick} />
+    <ThemeProvider>
+      <div className="flex flex-grow">
+        <div
+          className={`transition-all duration-700 ease-in-out ${
+            showNav ? 'w-[150px] min-w-[150px]' : 'w-[40px] min-w-[40px]'
+          }`}
+        >
+          <NavBar showNav={showNav} handleNavClick={handleNavClick} />
+        </div>
+        <main className="w-full">{children}</main>
       </div>
-      <main className="w-full">{children}</main>
-    </div>
+    </ThemeProvider>
   );
 }
