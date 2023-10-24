@@ -6,6 +6,12 @@
   * {
     @apply transition-all duration-200;
   }
+  body {
+    @apply bg-offwhite text-slate-800;
+  }
+  .dark body {
+    @apply text-offwhite bg-slate-800;
+  }
   h1 {
     @apply text-4xl font-normal leading-normal;
   }

@@ -2,6 +2,7 @@
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     fontSize: {
       xs: '0.75rem',
@@ -39,6 +40,17 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        offwhite: 'rgb(250,250,250)',
+        primaryBg: {
+          dark: '#1E293B',
+          light: '#CBD5E1',
+        },
+        primaryText: {
+          dark: '#CBD5E1',
+          light: '#1E293B',
+        },
+      },
       minWidth: {
         xs: '431px',
         sm: '640px',
