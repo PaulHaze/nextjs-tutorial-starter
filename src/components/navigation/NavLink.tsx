@@ -1,7 +1,7 @@
-import * as React from 'react';
+'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 import styles from './Nav.module.scss';
 
@@ -11,13 +11,13 @@ export type NavLinkProps = {
 };
 
 export function NavLink({ linkRef, linkText }: NavLinkProps) {
-  const router = useRouter();
+  const pathname = usePathname();
   return (
     <li>
       <Link
         href={linkRef}
         className={`${styles.sidebarLink} ${
-          router.pathname === linkRef && styles.active
+          pathname === linkRef && styles.active
         }`}
       >
         {linkText}

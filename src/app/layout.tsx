@@ -1,6 +1,7 @@
 import '@/styles/main.scss';
 
 import type { Metadata } from 'next';
+import { MainTemplate } from '@/components';
 
 export const metadata: Metadata = {
   title: 'NextJs Tutorial Template',
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MainTemplate>{children}</MainTemplate>
+      </body>
     </html>
   );
 }

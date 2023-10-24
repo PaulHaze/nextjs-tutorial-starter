@@ -1,11 +1,14 @@
+'use client';
+
 import { useState } from 'react';
-import { NavBar } from '@/components';
+
+import { NavBar } from '../navigation/NavBar';
 
 export type MainLayoutProps = {
   children: React.ReactNode;
 };
 
-export function MainLayout({ children }: MainLayoutProps) {
+export function MainTemplate({ children }: MainLayoutProps) {
   const [showNav, setShowNav] = useState(true);
   const handleNavClick = () => setShowNav((prev) => !prev);
 
