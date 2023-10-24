@@ -42,14 +42,14 @@ export function DarkModeSwitch() {
 
   const linesProps = useSpring({ opacity, config: properties.springConfig });
 
-  const lightIconColor = '#8c8c8c';
+  const lightIconColor = '#f6f8fd';
   const darkIconColor = '#f1f1f1';
 
   return (
     <button
       type="button"
       title={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-      className="flex-center mr-1 w-5"
+      className="flex-center w-5"
     >
       <animated.svg
         xmlns="http://www.w3.org/2000/svg"

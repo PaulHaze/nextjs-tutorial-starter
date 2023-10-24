@@ -1,10 +1,12 @@
+'use client';
+
 import { BiChevronsLeft } from 'react-icons/bi';
 
 import { NavLink } from './NavLink';
 import { routes } from './routes';
 
 import styles from './Nav.module.scss';
-import { DarkModeToggle } from './DarkModeToggle';
+import { DarkModeSwitch } from './DarkModeSwitch';
 
 type NavBarProps = {
   showNav: boolean;
@@ -43,7 +45,8 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
         </ul>
       </div>
       {/* DARK MODE TOGGLE */}
-      <DarkModeToggle showNav={showNav} />
+
+      <DarkModeSwitch showNav={showNav} />
     </nav>
   );
 }
