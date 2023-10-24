@@ -14,7 +14,7 @@ export function MainTemplate({ children }: MainLayoutProps) {
   const handleNavClick = () => setShowNav((prev) => !prev);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider enableSystem={false} defaultTheme="dark" attribute="class">
       <div className="flex flex-grow">
         <div
           className={`transition-all duration-700 ease-in-out ${
