@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply transition-colors duration-200;
-  }
+  // * {
+  //   @apply transition-colors duration-100;
+  // }
   body {
     @apply bg-offwhite text-slate-900;
   }
@@ -30,6 +30,9 @@
 }
 
 @layer components {
+  .sidebar-container {
+    @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-indigo-300/90 to-sky-800/90 p-5 px-2 py-4 dark:from-slate-500/40 dark:to-slate-800/40;
+  }
 }
 
 @layer utilities {

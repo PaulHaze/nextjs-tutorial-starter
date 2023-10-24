@@ -18,7 +18,7 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
     <NavLink key={r.key} linkRef={r.path} linkText={r.label} />
   ));
   return (
-    <nav className={styles.sidebarContainer}>
+    <nav className="sidebar-container">
       {/* NAV CONTAINER */}
       <div className="">
         {/* SHOW HIDE BUTTON */}
