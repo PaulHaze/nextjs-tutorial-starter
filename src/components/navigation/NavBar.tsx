@@ -1,9 +1,9 @@
 import { BiChevronsLeft } from 'react-icons/bi';
 
 import { NavLink } from './NavLink';
+import { routes } from './routes';
 
 import styles from './Nav.module.scss';
-import { routes } from './routes';
 
 type NavBarProps = {
   showNav: boolean;
@@ -16,28 +16,34 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
   ));
   return (
     <nav className={styles.sidebarContainer}>
-      {/* SHOW HIDE BUTTON */}
-      <div className={styles.toggleBtnContainer}>
-        <button
-          type="button"
-          onClick={handleNavClick}
-          className={styles.toggleBtn}
+      {/* NAV CONTAINER */}
+      <div className="">
+        {/* SHOW HIDE BUTTON */}
+        <div className={styles.toggleBtnContainer}>
+          <button
+            type="button"
+            onClick={handleNavClick}
+            className={styles.toggleBtn}
+          >
+            <BiChevronsLeft
+              className={`${styles.toggleIcon} ${
+                showNav ? 'scale-x-100' : '-scale-x-100'
+              }`}
+            />
+          </button>
+        </div>
+        {/* ROUTES */}
+        <ul
+          className={`${styles.linksList} ${
+            !showNav ? 'opacity-0' : 'opacity-100'
+          }`}
         >
-          <BiChevronsLeft
-            className={`${styles.toggleIcon} ${
-              showNav ? 'scale-x-100' : '-scale-x-100'
-            }`}
-          />
-        </button>
+          {renderRoutes}
+        </ul>
       </div>
-      {/* ROUTES */}
-      <ul
-        className={`${styles.linksList} ${
-          !showNav ? 'opacity-0' : 'opacity-100'
-        }`}
-      >
-        {renderRoutes}
-      </ul>
+
+      {/* DARK MODE TOGGLE */}
+      <div>X</div>
     </nav>
   );
 }
