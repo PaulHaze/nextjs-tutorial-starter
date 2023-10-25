@@ -33,6 +33,14 @@
   .sidebar-container {
     @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-indigo-300/90 to-sky-800/90 p-5 px-2 py-4 dark:from-slate-500/40 dark:to-slate-800/40;
   }
+  .sidebar-link {
+    @apply my-4 flex w-full justify-center whitespace-nowrap rounded bg-blue-50 px-4 py-2 text-center text-sm
+    font-semibold 
+    text-blue-500/50;
+    &.active {
+      @apply bg-green-900;
+    }
+  }
 }
 
 @layer utilities {

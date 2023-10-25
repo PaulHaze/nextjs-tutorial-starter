@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "next": "latest",
+    "next": "13.5.7-canary.25",
     "next-seo": "^6.1.0",
     "next-sitemap": "^4.2.3",
     "next-themes": "^0.2.1",

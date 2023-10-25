@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { cn } from '@/utils';
 
 import styles from './Nav.module.scss';
 
@@ -16,9 +17,10 @@ export function NavLink({ linkRef, linkText }: NavLinkProps) {
     <li>
       <Link
         href={linkRef}
-        className={`${styles.sidebarLink} ${
-          pathname === linkRef && styles.active
-        }`}
+        className={cn(
+          styles.sidebarLink,
+          pathname === linkRef && styles.active,
+        )}
       >
         {linkText}
       </Link>

@@ -2,6 +2,10 @@
   @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-indigo-300/90 to-sky-800/90 p-5 px-2 py-4;
 }
 
+:global(.dark) .sidebarContainer {
+  @apply from-slate-500/40 to-slate-800/40;
+}
+
 .toggleBtnContainer {
   @apply relative;
   .toggleBtn {
@@ -18,9 +22,16 @@
 }
 
 .sidebarLink {
-  @apply my-4 flex w-full justify-center whitespace-nowrap rounded bg-blue-50 px-4 py-2 text-center text-sm font-semibold text-blue-500/50;
+  @apply my-4 flex w-full justify-center whitespace-nowrap rounded bg-blue-50 px-4 py-2 text-center text-sm font-semibold text-blue-500/50 transition-all duration-200 hover:bg-blue-100;
+}
+
+:global(.dark) .sidebarLink {
+  @apply bg-slate-900 text-offwhite/40 hover:bg-slate-800;
 }
 
 .active {
   @apply bg-white text-blue-700;
+}
+:global(.dark) .active {
+  @apply border border-slate-200/30 bg-slate-900/60 text-offwhite;
 }
