@@ -18,7 +18,7 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
     <NavLink key={r.key} linkRef={r.path} linkText={r.label} />
   ));
   return (
-    <nav className="sidebar-container">
+    <nav className={styles.sidebarContainer}>
       {/* NAV CONTAINER */}
       <div className="">
         {/* SHOW HIDE BUTTON */}
@@ -45,7 +45,6 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
         </ul>
       </div>
       {/* DARK MODE TOGGLE */}
-
       <DarkModeSwitch showNav={showNav} />
     </nav>
   );

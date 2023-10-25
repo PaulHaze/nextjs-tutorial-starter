@@ -13,6 +13,10 @@
   }
 }
 
+:global(.dark) .toggleBtn {
+  @apply border-slate-200/30 bg-slate-900 text-offwhite/90;
+}
+
 .toggleIcon {
   @apply m-0 h-6 w-6 transition-all duration-300 ease-in-out;
 }
