@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background-color: #fafafa;
+  --text-color: #1e293b;
+  --sidebar-grad-start: #adbbf6;
+  --sidebar-grad-end: #36698d;
+  --navlink-text-active: #2c54d0;
+  --navlink-bg-active: #ffffff;
+  --navlink-text-inactive: #9cbcf5;
+  --navlink-bg-inactive: #f0f6fe;
+  --navlink-hover:  
+
+;
+}
+
+html[data-theme='light'] {
+  --background-color: #fff;
+  --text-color: #121416d8;
+  --link-color: #543fd7;
+}
+
+html[data-theme='dark'] {
+  --background-color: #212a2e;
+  --text-color: #f7f8f8;
+  --link-color: #828fff;
+}
+
 @layer base {
   // * {
   //   @apply transition-colors duration-100;
@@ -34,12 +60,7 @@
     @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-indigo-300/90 to-sky-800/90 p-5 px-2 py-4 dark:from-slate-500/40 dark:to-slate-800/40;
   }
   .sidebar-link {
-    @apply my-4 flex w-full justify-center whitespace-nowrap rounded bg-blue-50 px-4 py-2 text-center text-sm
-    font-semibold 
-    text-blue-500/50;
-    &.active {
-      @apply bg-green-900;
-    }
+    @apply my-4 flex w-full justify-center whitespace-nowrap rounded bg-blue-50 px-4 py-2 text-center text-sm font-semibold text-blue-500/50;
   }
 }
 

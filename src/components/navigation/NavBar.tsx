@@ -45,7 +45,7 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
         </ul>
       </div>
       {/* DARK MODE TOGGLE */}
-      <DarkModeSwitch showNav={showNav} />
+      <DarkModeSwitch />
     </nav>
   );
 }
