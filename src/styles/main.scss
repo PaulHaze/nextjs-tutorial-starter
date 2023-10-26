@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  // * {
-  //   @apply transition-colors duration-100;
-  // }
   body {
     @apply bg-offwhite text-slate-900;
   }
