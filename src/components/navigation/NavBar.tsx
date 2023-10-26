@@ -3,7 +3,9 @@
 import { BiChevronsLeft } from 'react-icons/bi';
 
 import { NavLink } from './NavLink';
-import { DarkModeSwitch } from './DarkModeSwitch';
+// import { DarkModeSwitch } from './DarkModeSwitch';
+import { DarkModeIconBtn } from './DarkModeIconBtn';
+
 import { routes } from './routes';
 
 import styles from './Nav.module.scss';
@@ -45,7 +47,8 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
         </ul>
       </div>
       {/* DARK MODE TOGGLE */}
-      <DarkModeSwitch />
+      <DarkModeIconBtn />
+      {/* <DarkModeSwitch /> */}
     </nav>
   );
 }
