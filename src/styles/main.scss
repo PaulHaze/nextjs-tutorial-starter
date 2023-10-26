@@ -44,6 +44,33 @@ html[data-theme='dark'] {
   --navlink-hover: #20293a;
 }
 
+.light {
+  --background-color: #fafafa;
+  --text-color: #1e293b;
+  --sidebar-grad-start: #adbbf6;
+  --sidebar-grad-end: #36698d;
+  --sidebar-chevron-bg: #f6f8fd;
+  --sidebar-chevron-color: #4d83ee;
+  --navlink-text-active: #2c54d0;
+  --navlink-bg-active: #ffffff;
+  --navlink-text-inactive: #9cbcf5;
+  --navlink-bg-inactive: #f0f6fe;
+  --navlink-hover: #e0e9fa;
+}
+.dark {
+  --background-color: #111729;
+  --text-color: #fafafa;
+  --sidebar-grad-start: #333c4f;
+  --sidebar-grad-end: #151d2c;
+  --sidebar-chevron-bg: #111729;
+  --sidebar-chevron-color: #fafafa;
+  --navlink-text-active: #fafafa;
+  --navlink-bg-active: #1d2536;
+  --navlink-text-inactive: #6e727c;
+  --navlink-bg-inactive: #111729;
+  --navlink-hover: #20293a;
+}
+
 @layer base {
   // * {
   //   @apply transition-colors duration-100;
