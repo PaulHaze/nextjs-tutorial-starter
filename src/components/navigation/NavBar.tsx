@@ -27,6 +27,7 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
           <button
             type="button"
             onClick={handleNavClick}
+            // onClick={handleNavClick}
             className={styles.toggleBtn}
           >
             <BiChevronsLeft
