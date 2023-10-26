@@ -6,7 +6,7 @@ export function DarkModeIconBtn() {
   const { setTheme, isDarkMode } = useTheme();
   return (
     <button
-      className="bb"
+      className="pl-2"
       onClick={() => setTheme(isDarkMode ? 'light' : 'dark')}
     >
       {isDarkMode ? (

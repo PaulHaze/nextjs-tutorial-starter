@@ -3,7 +3,6 @@
 import { BiChevronsLeft } from 'react-icons/bi';
 
 import { NavLink } from './NavLink';
-// import { DarkModeSwitch } from './DarkModeSwitch';
 import { DarkModeIconBtn } from './DarkModeIconBtn';
 
 import { routes } from './routes';
@@ -22,7 +21,7 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
   return (
     <nav className={styles.sidebarContainer}>
       {/* NAV CONTAINER */}
-      <div className="">
+      <div>
         {/* SHOW HIDE BUTTON */}
         <div className={styles.toggleBtnContainer}>
           <button
@@ -48,7 +47,6 @@ export function NavBar({ showNav, handleNavClick }: NavBarProps) {
       </div>
       {/* DARK MODE TOGGLE */}
       <DarkModeIconBtn />
-      {/* <DarkModeSwitch /> */}
     </nav>
   );
 }
