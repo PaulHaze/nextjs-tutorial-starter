@@ -1,11 +1,15 @@
+// .sidebarContainer {
+//   @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-indigo-300/90 to-sky-800/90 p-5 px-2 py-4;
+// }
+
 .sidebarContainer {
-  @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-indigo-300/90 to-sky-800/90 p-5 px-2 py-4;
+  @apply flex min-h-[100vh] flex-col justify-between bg-gradient-to-b from-grad-start to-grad-end p-5 px-2 py-4;
 }
 
 .toggleBtnContainer {
   @apply relative;
   .toggleBtn {
-    @apply flex h-6 w-6 items-center justify-center rounded border-2 border-blue-500 bg-[rgba(255,255,255,0.9)] text-blue-500;
+    @apply flex h-6 w-6 items-center justify-center rounded border-2 border-chevron-color bg-chevron-bg text-chevron-color;
   }
 }
 
@@ -26,12 +30,12 @@
 }
 
 // DARK SETTINGS
-:global(.dark) .sidebarContainer {
-  @apply from-slate-500/40 to-slate-800/40;
-}
-:global(.dark) .toggleBtn {
-  @apply border-slate-200/30 bg-slate-900 text-offwhite/90;
-}
+// :global(.dark) .sidebarContainer {
+//   @apply from-slate-500/40 to-slate-800/40;
+// }
+// :global(.dark) .toggleBtn {
+//   @apply border-slate-200/30 bg-slate-900 text-offwhite/90;
+// }
 :global(.dark) .sidebarLink {
   @apply border-slate-200/30 bg-slate-900 text-offwhite/40 hover:bg-slate-800;
 }
